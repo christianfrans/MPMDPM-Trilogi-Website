@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>MPM DPM Universitas Trilogi | Home</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        /* Reseting */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .container {
+            transform-style: preserve-3d;
+        }
+        
+        .container .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            perspective: 500px;
+            cursor: pointer;
+        }
+        
+        .container .box .body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 0.9s ease;
+        }
+        
+        .container .box .body .imgContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+        
+        .container .box .body .imgContainer img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .container .box .body .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: gold;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+        }
+        
+        .container .box:hover .body {
+            transform: rotateY(180deg);
+        }
+        
+        .container .box .body .content div {
+            transform-style: preserve-3d;
+            padding: 20px;
+            background: linear-gradient(45deg, rgb(13, 13, 99), #0b89ff);
+            transform: translateZ(100px);
+        }
+        
+        .container .box .body .content div h3 {
+            letter-spacing: 1px;
+        }
+    </style>
+
+    <!-- LOADER -->
+    <style>
+        .no-js #loader {
+            display: none;
+        }
+        
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+        
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(img/Loading.jpg) center no-repeat #fff;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="se-pre-con "></div>
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+
+                    <img class="img-fluid" src="img/icons/MPMDPM.png" alt="Icon" style="width: 150px;">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="profile.html" class="nav-item nav-link">Profile</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Departments</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <div class="dropdown-header">MPM</div>
+                                <hr class="dropdown-divider"></hr>
+                                <a href="pengurus-inti-mpm.html" class="dropdown-item">Pengurus Inti</a>
+                                <a href="komisi-a-mpm.html" class="dropdown-item">Komisi A</a>
+                                <a href="komisi-b-mpm.html" class="dropdown-item">Komisi B</a>
+                                <a href="komisi-c-mpm.html" class="dropdown-item">Komisi C</a>
+                                <a href="bpi-mpm.html" class="dropdown-item">BPI</a>
+                                <a href="kominfo-mpm.html" class="dropdown-item">KOMINFO</a>
+                                <a href="burt-mpm.html" class="dropdown-item">BURT</a>
+                                <hr class="dropdown-divider"></hr>
+                                <div class="dropdown-header">DPM</div>
+                                <hr class="dropdown-divider"></hr>
+                                <a href="pengurus-inti-dpm.html" class="dropdown-item">Pengurus Inti</a>
+                                <a href="komisi-1-dpm.html" class="dropdown-item">Komisi 1</a>
+                                <a href="komisi-2-dpm.html" class="dropdown-item">Komisi 2</a>
+                                <a href="komisi-3-dpm.html" class="dropdown-item">Komisi 3</a>
+                                <a href="komisi-4-dpm.html" class="dropdown-item">Komisi 4</a>
+                                <a href="komisi-5-dpm.html" class="dropdown-item">Komisi 5</a>
+                                <a href="komisi-6-dpm.html" class="dropdown-item">Komisi 6</a>
+                                <a href="komisi-7-dpm.html" class="dropdown-item">Komisi 7</a>
+                            </div>
+                        </div>
+                        <a href="#news" class="nav-item nav-link">News</a>
+                        <a href="aspiration.html" class="nav-item nav-link">Aspiration</a>
+                        <a href="campusVisit.html" class="nav-item nav-link">Campus Visit</a>
+                    </div>
+                    <a href="loginAdmin.html" class="btn btn-primary px-3 d-none d-lg-flex">Login</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">MPM DPM<br><span class="text-secondary">Universitas Trilogi</span></h1>
+                    <p class="animated fadeIn mb-4 pb-2">Lembaga Legislatif Mahasiswa Universitas Trilogi<br><br>🔹 MPM: Lembaga Kemahasiswaan Tertinggi, Pemegang dan Pelaksana Kedaulatan Mahasiswa Universitas Trilogi.<br>🔸 DPM: Aspirasi, Budgeting, dan Pengawasan.</p>
+                    <a href="profile.html" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get to Know Us!</a>
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/hero/logo-index.png" alt="" style="margin-top: 90pt;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Search Start -->
+        <div class="container-fluid mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px; background-color: rgb(18, 18, 102);">
+
+        </div>
+        <!-- Search End -->
+
+        <!-- About Start -->
+        <div class="container-xxl">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid w-100" src="img/MPM/Ketua.png">
+                    </div>
+                    <div class="text-center col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Ketua MPM<br>Periode 2021/2022</h1>
+                        <p class="mb-4">Bagus Syadila Rahman<br>Ekonomi Pembangunan '18</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid w-100" src="img/MPM/Wakil.png">
+                    </div>
+                    <div class="text-center col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Wakil Ketua MPM<br>Periode 2021/2022</h1>
+                        <p class="mb-4">Febriyani Novitasari<br>Manajemen '19</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid w-100" src="img/DPM/Ketua.png">
+                    </div>
+                    <div class="text-center col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Ketua DPM<br>Periode 2021/2022</h1>
+                        <p class="mb-4">Lintang Ayu Nurramdhani<br>Sistem Informasi '19</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="img-fluid w-100" src="img/DPM/Wakil Ketua.png">
+                    </div>
+                    <div class="text-center col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">Wakil Ketua DPM<br>Periode 2021/2022</h1>
+                        <p class="mb-4">Chris Tomatala<br>Sistem Informasi '20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container wow fadeIn">
+                <h1 class="fs-9 fw-bold mb-4 text-center "> Our Departments <br class="d-none d-xl-block " /></h1>
+                <div class="container ">
+                    </br>
+                    </br>
+                    <h1 class="fw-bold fs-6 mb-3 text-center ">Majelis Permusyawaratan Mahasiswa</h1>
+                    <p class="mb-6 text-secondary text-center ">2021/2022</p>
+                    <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+                        <div class="box wow fadeIn">
+                            <div class="body ">
+                                <div class="imgContainer ">
+                                    <img src="img/MPM/KomisiA.png " alt=" ">
+                                </div>
+                                <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                    <div>
+                                        <h3 class="text-white ">Komisi A</h3>
+                                        <p class="text-white ">Bertanggung jawab atas UU IKM dan persidangan yang berhubungan dengan MPM.</p>
+                                        <a href="komisi-a-mpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box wow fadeIn">
+                            <div class="body ">
+                                <div class="imgContainer ">
+                                    <img src="img/MPM/KomisiB.png " alt=" ">
+                                </div>
+                                <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                    <div>
+                                        <h3 class="text-white ">Komisi B</h3>
+                                        <p class="text-white ">Mengatur Pemilihan Raya (PEMIRA) Presiden & Wakil Presiden Mahasiswa dan Serah Terima Jabatan (SERTIJAB).
+                                        </p>
+                                        <a href="komisi-b-mpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box wow fadeIn">
+                            <div class="body ">
+                                <div class="imgContainer ">
+                                    <img src="img/MPM/KomisiC.png " alt=" ">
+                                </div>
+                                <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                    <div>
+                                        <h3 class="text-white ">Komisi C</h3>
+                                        <p class="text-white ">Melaksanakan evaluasi untuk Badan Eksekutif Mahasiswa (BEM) di Pertengahan Tahun dan di Akhir Tahun.</p>
+                                        <a href="komisi-c-mpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box wow fadeIn">
+                            <div class="body ">
+                                <div class="imgContainer ">
+                                    <img src="img/MPM/Kominfo.png " alt=" ">
+                                </div>
+                                <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                    <div>
+                                        <h3 class="text-white ">KOMINFO</h3>
+                                        <p class="text-white ">Bertanggung Jawab atas kebutuhan multimedia serta membangun citra MPMDPM Univertsitas Trilogi melalui penggambaran visual, audio, dan audiovisual.</p>
+                                        <a href="kominfo-mpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box wow fadeIn">
+                            <div class="body ">
+                                <div class="imgContainer ">
+                                    <img src="img/MPM/BPI.png " alt=" ">
+                                </div>
+                                <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                    <div>
+                                        <h3 class="text-white ">BPI</h3>
+                                        <p class="text-white ">Mengurus Open Recruitment (OPREC) MPM dan Reward anggota MPM & DPM yang memiliki kinerja bagus selama 1 periode.</p>
+                                        <a href="bpi-mpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box wow fadeIn">
+                            <div class="body ">
+                                <div class="imgContainer ">
+                                    <img src="img/MPM/BURT.png " alt=" ">
+                                </div>
+                                <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                    <div>
+                                        <h3 class="text-white ">BURT</h3>
+                                        <p class="text-white ">Mengurus Perlengkapan Kesekretariatan MPM.</p>
+                                        <a href="burt-mpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex align-items-center justify-content-center flex-wrap wow fadeIn">
+            <div class="container ">
+                <h1 class="fw-bold fs-6 mb-3 text-center ">Dewan Perwakilan Mahasiswa</h1>
+                <p class="mb-6 text-secondary text-center ">2021/2022</p>
+                <div class="container d-flex align-items-center justify-content-center flex-wrap ">
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi1.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 1</h3>
+                                    <p class="text-white ">Bertanggung jawab sebagai wadah aspirasi bagi seluruh mahasiswa Universitas Trilogi.</p>
+                                    <a href="komisi-1-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi2.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 2</h3>
+                                    <p class="text-white ">Mengatur dan mengurus Studi Banding, serta bertugas untuk mengurus Open Recruitment (OPREC) DPM dan mengadakan pelatihan Soft skill bagi para anggota DPM.</p>
+                                    <a href="komisi-2-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi3.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 3</h3>
+                                    <p class="text-white ">Bertugas untuk membuat peraturan internal DPM, membuat RUU yang akan diajukan ke MPM, mengevaluasi peraturan yang berlaku, dan membuat AD/ART dan SOP.</p>
+                                    <a href="komisi-3-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi4.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 4</h3>
+                                    <p class="text-white ">Bertugas untuk mengawasi keuangan dan kinerja komisi atau kementrian lain, memeriksa proposal dan lpj seluruh ormawa yang berada di Universitas Trilogi, dan mereka juga mengawasi kegiatan yang diadakan oleh BEM dan
+                                        UKM.
+                                    </p>
+                                    <a href="komisi-4-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi5.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 5</h3>
+                                    <p class="text-white ">Bertugas untuk menetapkan, merancang RAPBO, serta mencairkan dana ORMAWA & UKM sesuai dengan keputusan hasil rapat RAPBO dan mengevaluasi RAPBO selama 1 periode.</p>
+                                    <a href="komisi-5-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi6.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 6</h3>
+                                    <p class="text-white ">Bertanggung Jawab atas kebutuhan multimedia serta membangun citra MPMDPM Univertsitas Trilogi melalui penggambaran visual, audio, dan audiovisual.</p>
+                                    <a href="komisi-6-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box wow fadeIn">
+                        <div class="body ">
+                            <div class="imgContainer ">
+                                <img src="img/DPM/Komisi7.png " alt=" ">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center ">
+                                <div>
+                                    <h3 class="text-white ">Komisi 7</h3>
+                                    <p class="text-white ">Mengurus Perlengkapan Kesekretariatan DPM.</p>
+                                    <a href="komisi-7-dpm.html" class="btn btn-secondary py-3 px-5 me-3 animated fadeIn text-center">Get to Know Us!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+        <!-- Call to Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-dark rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed gold">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <iframe height="281" width="500" src="https://www.youtube.com/embed/f3stOssGaQY " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3">DENGAR</h1>
+                                    <p>Dewan Mendengar Eps. 1</p>
+                                </div>
+                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fab fa-youtube "></i> Watch full on YouTube!</a>
+                                <a href="" class="btn btn-secondary py-3 px-4"><i class="fab fa-spotify "></i> Listen on Spotify!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action End -->
+
+        <!-- Property List Start -->
+        <div class="container-xxl py-5" id="news">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3">News</h1>
+                            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit diam justo sed rebum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Kampus</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">ORMAWA</a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">UKM</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/DSCF8554.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Kampus</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Pergubi Bertekad Mendorong Kemakmuran Bangsa</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/DSCF8740.jpg" alt=""></a>
+                                            <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                            <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">ORMAWA</div>
+                                        </div>
+                                        <div class="p-4 pb-0">
+                                            <a class="d-block h5 mb-2" href="">Intelijen Santri Jadi Karakter Intelijen Indonesia</a>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://www.goodnewsfromindonesia.id/uploads/post/large-gedung-dpr-parlementaria-com-05bf39221e74d0a135f6a744efe29174.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">UKM</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Sejumlah Dosen Ikut Uji Kompetensi Fasilitator Pertanian Organik</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/DSCF8740.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">ORMAWA</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Intelijen Santri Jadi Karakter Intelijen Indonesia</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/DSCF8740.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">ORMAWA</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Intelijen Santri Jadi Karakter Intelijen Indonesia</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/DSCF8740.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">ORMAWA</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Intelijen Santri Jadi Karakter Intelijen Indonesia</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-13-at-11.16.39.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">UKM</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Sejumlah Dosen Ikut Uji Kompetensi Fasilitator Pertanian Organik</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-13-at-11.16.39.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">UKM</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Sejumlah Dosen Ikut Uji Kompetensi Fasilitator Pertanian Organik</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="https://trilogi.ac.id/universitas/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-13-at-11.16.39.jpeg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">30 Juni 2022</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">UKM</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <a class="d-block h5 mb-2" href="">Sejumlah Dosen Ikut Uji Kompetensi Fasilitator Pertanian Organik</a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Property List End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p class="mb-2"><i class="fa fa-search-location me-3"></i><a class=text-white " href="https://goo.gl/maps/tbXJjrDeKFEzMW2F9 "> Lt. 1 Universitas Trilogi</a></p>
+                        <p class="mb-2 "><i class="fas fa-phone me-3 "></i><a class="text-white " href="https://wa.me/081362832712 "> (081362832712) Deyaninta</a></p>
+                        <p class="mb-2 "><i class="fas fa-envelope me-3 "></i><a class="text-white " href="mailto:mpm@trilogi.ac.id "> mpm@trilogi.ac.id</a></p>
+                        <p class="mb-2 "><i class="fas fa-envelope me-3 "></i><a class="text-white " href="mailto:dpm@trilogi.ac.id "> dpm@trilogi.ac.id</a></p>
+                        <div class="d-flex pt-2 ">
+                            <a class="btn btn-outline-light btn-social " href="https://lin.ee/ "><i class="fab fa-line "></i></a>
+                            <a class="btn btn-outline-light btn-social " href="https://www.instagram.com/mpmdpm_trilogi/ "><i class="fab fa-instagram "></i></a>
+                            <a class="btn btn-outline-light btn-social " href="https://www.youtube.com/channel/UCaBcfbe_osSz4Qd8gRqUr3Q "><i class="fab fa-youtube "></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h5 class="text-white mb-4 ">Links</h5>
+                        <a class="btn btn-link text-white-50 " href="aspiration.html ">Aspiration</a>
+                        <a class="btn btn-link text-white-50 " href="campusVisit.html ">Campus Visit</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h5 class="text-white mb-4 ">Photo Gallery</h5>
+                        <div class="row g-2 pt-2 ">
+                            <div class="col-4 ">
+                                <img class="img-fluid rounded bg-light p-1 " src="img/hero/logo-index.png " alt=" ">
+                            </div>
+                            <div class="col-4 ">
+                                <img class="img-fluid rounded bg-light p-1 " src="img/hero/logo-index.png " alt=" ">
+                            </div>
+                            <div class="col-4 ">
+                                <img class="img-fluid rounded bg-light p-1 " src="img/hero/logo-index.png " alt=" ">
+                            </div>
+                            <div class="col-4 ">
+                                <img class="img-fluid rounded bg-light p-1 " src="img/hero/logo-index.png " alt=" ">
+                            </div>
+                            <div class="col-4 ">
+                                <img class="img-fluid rounded bg-light p-1 " src="img/hero/logo-index.png " alt=" ">
+                            </div>
+                            <div class="col-4 ">
+                                <img class="img-fluid rounded bg-light p-1 " src="img/hero/logo-index.png " alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 ">
+                        <h5 class="text-white mb-4 ">Our Location</h5>
+                        <div class="position-relative mx-auto " style="max-width: 400px; ">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0828598529642!2d106.84698361431052!3d-6.2528129629612925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3a5be656509%3A0xb407f61e419da940!2sUniversitas%20Trilogi!5e0!3m2!1sen!2sid!4v1657170005224!5m2!1sen!2sid "
+                            width="200 " height="200 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container ">
+                <div class="copyright ">
+                    <div class="row ">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 ">
+                            &copy; <a class="border-bottom " href="#
+                                ">MPM DPM Universitas Trilogi</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal ". Thank you for your support. ***/-->
+                            <br>Designed By <a class="border-bottom " href="https://htmlcodex.com ">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end ">
+                            <div class="footer-menu ">
+                                <a href=" ">Powered by KOMINFO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="# " class="btn btn-lg btn-primary btn-lg-square back-to-top "><i class="bi bi-arrow-up "></i></a>
+    </div>
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js "></script>
+    <script>
+        setTimeout(function() {
+            $('.se-pre-con').fadeOut();
+        }, 3000);
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="lib/wow/wow.min.js "></script>
+    <script src="lib/easing/easing.min.js "></script>
+    <script src="lib/waypoints/waypoints.min.js "></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js "></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js "></script>
+</body>
+
+</html>
